@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1> 제품 소개 </h1>
+    <hr/>
+    {% for post in posts %}
+        <tr>
+            <a href={% url "blog:blog_detail" post.pk %}>
+                <td>"Title: "{{post.title}}</td> 
+            </a> 
+        </tr>
+        <hr>
+
+    {% endfor %}
+
+{% endblock %}
