@@ -6,7 +6,7 @@
     {% for post in posts %}
         <tr>
             <a href={% url "blog:blog_detail" post.pk %}>
-                <td>"Title: "{{post.title}}</td> 
+                <td>{{post.title}}</td> 
             </a> 
         </tr>
         <hr>
