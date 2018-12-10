@@ -17,6 +17,9 @@ def index(request):
         'post_list':post_list,
     })
 
+def item(request):
+    return render(request,'blog/item.html',)
+
 
 def company(request):    
     return render(request,'blog/company.html',)
