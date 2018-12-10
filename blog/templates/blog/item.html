@@ -2,5 +2,12 @@
 {% load static fresh_static %}   
 
 {% block content %}
-    <img src="{% fresh_static "img/patent.png" %}" style="width:auto;" >    
+<nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="{% url "blog:company" %}"><img src="{% fresh_static "img/patent.png" %}" style="width:auto;" >회사소개</a>
+        <a class="p-2 text-dark" href="{% url "blog:moto" %}">경영이념</a>
+        <a class="p-2 text-dark" href="{% url "blog:patent" %}">특허권</a>
+        <a class="p-2 text-dark" href="{% url "blog:item" %}">제품소개</a>
+        <a class="p-2 text-dark" href="{% url "blog:blog_list" %}">History</a>
+    </nav>
+        
 {% endblock %}
