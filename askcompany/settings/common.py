@@ -24,7 +24,7 @@ BASE_DIR = dirname(dirname(dirname(abspath(__file__))))
 SECRET_KEY = ')&9kh7+8ynwkqc*7=oc=3ro84!=%ey=i$^hi&hdh*roi&30u#r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True  # False
+DEBUG =   False # True
 
 ALLOWED_HOSTS = ['*']
 
