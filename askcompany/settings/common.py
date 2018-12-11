@@ -26,7 +26,7 @@ SECRET_KEY = 'sinbee_secret_key'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG =  False
 
-ALLOWED_HOSTS = ['127.0.0.1','*.heroku.com']
+ALLOWED_HOSTS = ['127.0.0.1','sinbee.herokuapp.com']
 
 
 # Application definition
