@@ -1,13 +1,19 @@
 {% extends "layout.html" %}
 {% load fresh_static %}
 
-{% block title %}Blog by Ask Company{% endblock %}
+{% block title %}신비시스템{% endblock %}
 
 {% block extra_head %}
     {{ block.super }}
-    <link rel="stylesheet" href="{% fresh_static "blog/blog.css" %}" />
+    <link rel="stylesheet" href="{% fresh_static "blog/blog.css" %}" />    
 {% endblock %}
 
+
+{% block content %}
+<img src="{% fresh_static "img/main.png" %}" style="width:100%;" >    
+{% endblock %}
+
+
 {% block extra_body %}
-    {{ block.super }}
+    {{ block.super }}    
 {% endblock %}

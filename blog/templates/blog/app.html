@@ -1,0 +1,68 @@
+{% extends "blog/layout.html" %}
+{% load static fresh_static %}   
+
+{% block content %}
+    <div class="sub_title_app1">
+        <h4>
+            <p>경복궁 미션답사 APP</p>
+        </h4>
+        <a>
+            <span>경복궁 답사를 통한 자기 주도형 학습이 가능한 어플리케이션</span>
+        </a>        
+        
+    </div>   
+        
+    <div >
+        <img src="{% fresh_static "img/app.png" %}" style="width:100%;" > 
+        <p class="magt20 magb20 l_s_20 f15 c3 taj l_h_24">
+                <br /><br /> 
+            조선의 궁궐 경복궁에서 가이드의 설명에만 의존하지 않고 흥미로운 미션을 수행하면서 자기 주도형 학습이 가능한 프로그램<br /><br />
+            GPS로 현장을 찾아가고 그곳에 도착하면 자동으로 출제되는 미션 내용에 따라 문제를 해결하여 미션을 수행하는 APP
+        </p>
+    </div>        
+    
+
+    <div >
+        <img src="{% fresh_static "img/app1.png" %}" style="width:100%;" > 
+        <p class="magt20 magb20 l_s_20 f15 c3 taj l_h_24">
+                <br /><br /> 
+            APP 진행 순서 <br /><br />           
+            경복궁 출발 -> 서비스 위치 알림 -> 미션 장소 -> 문제 풀기 -> 미션 완료
+        </p>
+    </div> 
+        
+    <hr/>
+    
+<div class="sub_title_app2">
+    <h4>
+        <p>스마트팩스 APP</p>
+    </h4>
+    <a>
+        <span>팩스를 대신하여 사용하도록 하는 어플리케이션</span>
+    </a>        
+    
+</div>   
+    
+<div >
+    <img src="{% fresh_static "img/app2.png" %}" style="width:100%;" > 
+    <p class="magt20 magb20 l_s_20 f15 c3 taj l_h_24">
+            <br /><br /> 
+        견적서,발주서,자기소개서,사업제안서 등 자주 사용되는 양식을 간단하게 텍스트로 입력할 수 있음<br /><br />
+        간편한 수식을 입력하고 자동 계산되어 서버를 통해 자신의 양식을 저장,전송이 가능
+    </p>
+</div>        
+
+
+<div >
+    <img src="{% fresh_static "img/app3.png" %}" style="width:100%;" > 
+    <p class="magt20 magb20 l_s_20 f15 c3 taj l_h_24">
+         
+    </p>
+</div> 
+    
+<hr/>   
+    
+    
+    
+
+{% endblock %}

@@ -16,10 +16,12 @@ def index(request):
     return render(request,'blog/index.html',{
         'post_list':post_list,
     })
-
+'''
 def item(request):
     return render(request,'blog/item.html',)
-
+'''
+def root(request):    
+    return render(request,'blog/layout.html',)
 
 def company(request):    
     return render(request,'blog/company.html',)
@@ -27,5 +29,15 @@ def company(request):
 def moto(request):    
     return render(request,'blog/moto.html',)
 
-def patent(request):    
-    return render(request,'blog/patent.html',)
+
+def iot(request):    
+    return render(request,'blog/iot.html',)
+
+def app(request):    
+    return render(request,'blog/app.html',)
+
+def web(request):    
+    return render(request,'blog/web.html',)
+
+def series(request):    
+    return render(request,'blog/series.html',)

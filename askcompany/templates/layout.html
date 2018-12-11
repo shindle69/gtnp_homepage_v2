@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
-        <title>{% block title %}GT&P{% endblock %}</title>
+        <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
         {% block extra_head %}
             <link rel="stylesheet" href="{% fresh_static "main.css" %}" />
@@ -14,15 +14,19 @@
 
         <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
                      
-            <h5 class="my-0 mr-md-auto font-weight-normal">                
-                <a href="{% url "blog:company" %}">
-                    <img src="{% static "img/gtnp.png" %}" /> 
+            <h3 class="my-0 mr-md-auto font-weight-normal">                
+                <a href="{% url "blog:root" %}">
+                    <img src="{% static "img/logo2.png" %}" width="40"/> 
+                    신비시스템
                 </a>              
-            </h5>
-            <nav class="my-2 my-md-0 mr-md-3">
+            </h3>
+                        
+            <nav class="my-2 my-md-0 mr-md-3" >
                 <a class="p-2 text-dark" href="{% url "blog:company" %}">회사소개</a>
-                <a class="p-2 text-dark" href="{% url "blog:patent" %}">특허권</a>
-                <a class="p-2 text-dark" href="{% url "blog:item" %}">제품소개</a>
+                <a class="p-2 text-dark" href="{% url "blog:iot" %}">IOT SYSTEM</a>  
+                <a class="p-2 text-dark" href="{% url "blog:app" %}">APP</a>  
+                <a class="p-2 text-dark" href="{% url "blog:web" %}">WEB</a> 
+                <a class="p-2 text-dark" href="{% url "blog:series" %}">용한씨리즈</a>             
                 <a class="p-2 text-dark" href="{% url "blog:blog_list" %}">History</a>
             </nav>
             <a class="btn btn-outline-primary" href="#">Sign up</a>
@@ -38,23 +42,20 @@
                 <div class="row">
                     <div class="col-12 col-md">
                         <img class="mb-2" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                        <small class="d-block mb-3 text-muted">© 2018. (주)지티앤피.</small>
+                        <small class="d-block mb-3 text-muted">© 2018. 신비시스템.</small>
                         
                     </div>
                     <div class="col-6 col-md">
                         <h5>주소</h5>
                         <ul class="list-unstyled text-small">
-                            <small class="d-block mb-3 text-muted">[본사] 부산광역시 강서구 유통단지1로 41,</small>
-                            <small class="d-block mb-3 text-muted">113동 220호 (대저2동,부산티플렉스)</small>
-                            <small class="d-block mb-3 text-muted">[양산공장,기술연구소]</small>
-                            <small class="d-block mb-3 text-muted">경상남도 양산시 물금읍 가촌서로 36</small>
+                            <small class="d-block mb-3 text-muted">부산광역시 강서구 유통단지1로 41,</small>
+                            <small class="d-block mb-3 text-muted">113동 220호 (대저2동,부산티플렉스)</small>                            
                         </ul>
                     </div>
                     <div class="col-6 col-md">
                         <h5>연락처</h5>
                         <ul class="list-unstyled text-small">
-                                <small class="d-block mb-3 text-muted">전화번호:051-796-2287</small>
-                                <small class="d-block mb-3 text-muted">팩스:051-797-8365</small>
+                                
                                 <small class="d-block mb-3 text-muted">모바일:010-7159-9041</small>
                                 <small class="d-block mb-3 text-muted">이메일:juyouso@gmail.com</small>
                         </ul>
@@ -62,10 +63,10 @@
                     <div class="col-6 col-md">
                         <h5>About</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#">Team</a></li>
-                            <li><a class="text-muted" href="#">Locations</a></li>
-                            <li><a class="text-muted" href="#">Privacy</a></li>
-                            <li><a class="text-muted" href="#">Terms</a></li>
+                            <li><a class="text-muted" href="#">Python</a></li>
+                            <li><a class="text-muted" href="#">Django</a></li>
+                            <li><a class="text-muted" href="#">Web</a></li>
+                            <li><a class="text-muted" href="#">APP</a></li>
                         </ul>
                     </div>
                 </div>

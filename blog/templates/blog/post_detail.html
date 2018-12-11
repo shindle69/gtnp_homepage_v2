@@ -1,16 +1,8 @@
 {% extends "blog/layout.html" %}
-<style>
-    .post_photo{
-        max-width: 100%;
-    }
-</style>
 
 
 {% block content %}
-    <h1>{{ post.tile }}</h1>    
-    {% if post.photo %}
-        <img src="{{ post.photo.url }}" class="post_photo" />
-    {% endif %}
+    <h1>{{ post.title }}</h1>  
     <hr>
     {{ post.content|linebreaks }}
 {% endblock %}

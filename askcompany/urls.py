@@ -24,7 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     # path('shop/', include('shop.urls')),
-    path('', lambda req: redirect('blog:company'), name='root'),
+    path('', lambda req: redirect('blog:root'), name='root'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
